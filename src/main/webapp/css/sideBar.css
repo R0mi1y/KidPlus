@@ -1,0 +1,170 @@
+* {
+    transition: 0.1s;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    backdrop-filter: brightness(50%);
+    width: 200px;
+    color: #999;
+    transition: 0.3s ease;
+    /* box-shadow:  23px 23px 46px #2a2a2a, -23px -23px 46px #ffffff; */
+}
+
+#sidebar.hidden {
+    left: -201px;
+    width: 260px;
+    /* box-shadow:  23px 23px 46px #000000, -23px -23px 46px #ffffff; */
+}
+
+#sidebar.hidden .notTg {
+    left: 210px;
+    transition: 0.2s;
+}
+
+/* .toggle-sidebar{
+    top: 0px;
+    position: fixed;
+} */
+.btn-menu > ol > li > a {
+	background-color: transparent;
+}
+
+.btn-menu > ol > li > a:hover {
+    background-color: rgb(77, 19, 77);
+}
+
+.btn-menu-img:hover {
+    background-color: rgb(77, 19, 77);
+}
+
+.btn-menu-img{
+    transition: 0.28s;
+    left: 10px;
+    margin-top: 20px;
+    width: 35px;
+    height: auto;
+    padding: 5px 15px;
+    position: fixed;
+    padding: 0px;
+    border-radius: 20px;
+    
+    background: rgb(193, 190, 190);
+    border: 1px solid #000;
+}
+
+.btn-menu-img#home{
+    top: 50px;
+}
+.btn-menu-img#cadastro{
+    top: 120px;
+}
+.btn-menu-img#ensino{
+    top: 190px;
+}
+.btn-menu-img#atv{
+    top: 260px;
+}
+.btn-menu-img#social{
+    top: 330px;
+}
+.btn-menu-img#sair{
+    top: 400px;
+}
+.btn-menu ol{
+    margin-bottom: 47px;
+}
+
+.btn-menu li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: relative;
+    top: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 20px 65px;
+    transition: 0.1s;
+    border-radius: 0px;
+    
+}
+.btn-menu li a.home{
+    padding-right: 82px;
+}
+.btn-menu li a.cadastro-bar{
+    padding-right: 44px;
+}
+.btn-menu li a.ensino{
+    padding-right: 74px;
+}
+.btn-menu li a.atv{
+    padding-right: 41px;
+}
+.btn-menu li a.social{
+    padding-right: 80px;
+}
+.btn-menu li a.sair{
+    padding-right: 99px;
+}
+.btn-menu li a.minimizar{
+    padding-right: 49px;
+    top: 0px;
+}
+.btn-menu li a.tgl{
+    transition: 0.28s;
+    padding: 8px 13px;
+    border: 1px solid black;
+    color: black;
+    background: rgb(173, 165, 165);
+    top: 4px;
+}
+
+#sidebar-perfil {
+    display: flex;
+    background: rgb(33, 33, 33);
+    height: 50px;
+    /* box-shadow:  23px 23px 46px #2a2a2a, -23px -23px 46px #ffffff; */
+}
+
+.btn-menu ol a > p{
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    height: 20px;
+    width: 20px;
+    margin-top: 0px;
+    font-size: 15px;
+    padding: 10px;
+    top: 480px;
+    box-sizing: content-box;
+}
+
+.choice {
+    border-bottom: 1px solid;
+}
+
+#perfil {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 400px;
+    transition: 0.3s;
+}
+
+.hidden #perfil {
+    margin-left: 75px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(222, 254, 223);
+    border-radius: 400px;
+    transition: 0.3s;
+}
+
+.userName {
+    color: aliceblue;
+    margin: 10px;
+    font-size: 30px;
+}

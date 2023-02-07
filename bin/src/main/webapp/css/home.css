@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient(45deg, #54008b, #98ccfc, #006f41); */
+    background-image: url(Img/loginBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    margin-left: 75px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    margin: 0 0;
+    margin-left: 142px;
+    max-width: 1280px;
+    transition: 0.2s;
+}
+
+.container.hidden{
+    margin: 0 0;
+    margin-left: 50px;
+    max-width: 1280px;
+}

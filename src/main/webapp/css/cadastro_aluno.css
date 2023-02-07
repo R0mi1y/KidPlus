@@ -1,0 +1,94 @@
+body{
+    min-width: 750px;
+}
+
+.titulo {
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo1 {
+    letter-spacing: 2px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+.cad-input {
+    border: 0;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#dtNs-Lable {
+    font-size: 12px;
+    color: lightgrey;
+    border: 0;
+    background-color: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    bottom: 31px;
+}
+
+.cad-container{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.cad-input-single {
+    position: relative;
+    margin: 20px 0;
+}
+
+.cad-input-single > label {
+    position: absolute;
+    left: 0;
+    bottom: 13px;
+    transition: all 0.2s;
+    cursor: text;
+    font-size: 15px;
+}
+
+form .cad-input:valid ~ label,
+form .cad-input:focus ~ label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    transition: all 0.07s;
+    color: lightgrey;
+}
+
+.cad-input.dt{
+    padding: 0px;
+    width: 20px;
+}
+
+form .cad-input.dt:valid ~ label,
+form .cad-input.dt:focus ~ label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    transition: all 0.07s;
+    color: lightgrey;
+}
+
+.cad-input.dt::placeholder{
+    color: white;
+    font-size: 16px;
+}
+.cad-input.dt.dia{
+    width: 50px;
+    margin-right: 10px;
+}
+.cad-input.dt.mes{
+    width: 50px;
+    margin-right: 10px;
+}
+.cad-input.dt.ano{
+    width: 100px;
+}
+
+
