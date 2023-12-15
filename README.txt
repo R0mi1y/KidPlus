@@ -1,5 +1,5 @@
-CRIADORES: 
-	Ediel Romily Silva Caetano & André Macena santos.
+CRIADOR: 
+	Ediel Romily Silva Caetano
 
 DESCRIÇÃO: 
 	É um sistema para gerenciamento de creche, que permite o cadastro de responsáveis, professores, alunos, eventos e cardápios
