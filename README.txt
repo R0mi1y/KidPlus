@@ -1,46 +1,57 @@
-CRIADOR: 
-	Ediel Romily Silva Caetano
+# KidPlus
 
-DESCRIÇÃO: 
-	É um sistema para gerenciamento de creche, que permite o cadastro de responsáveis, professores, alunos, eventos e cardápios
+**Criador:** Ediel Romily Silva Caetano
 
-INSTALAÇÃO:
-	PRÉ-REQUISITOS: 
-		acesso à um banco de dados chamado creche;
-		ter uma ide que suporte java web (nas instruções usamos o intellij)
+## Descrição
 
-	Passo 1: Baixar o projeto do Github
+**KidPlus** é um sistema para o gerenciamento de creches, desenvolvido em Java Web utilizando JSP e Maven, com suporte para Tomcat. A aplicação permite o cadastro e gerenciamento de responsáveis, professores, alunos, eventos e cardápios em um ambiente de creche.
 
-		Baixe os arquivos do projeto do Github e extraia-os em uma pasta local.
+## Instalação
 
-	Passo 2: Abrir o projeto no IntelliJ
+### Pré-requisitos
 
-		Abra o IntelliJ e vá em File > Open e selecione a pasta do projeto.
+- **Banco de Dados:** Um banco de dados MySQL chamado `creche`.
+- **IDE:** IntelliJ IDEA ou outra IDE que suporte desenvolvimento Java Web.
+- **Servidor:** Apache Tomcat instalado em seu sistema.
 
-	Passo 3: Configurar o Tomcat no IntelliJ
+### Passos para Instalação
 
-		Acesse o menu Run e selecione Edit Configurations.
-		Clique no botão + e selecione Tomcat Server > Local.
-		Forneça um nome para a configuração do servidor e especifique a localização do Tomcat instalado em seu sistema.
-		Clique em Apply e OK para salvar as configurações.
-	
-	Passo 4: Executar o projeto
-		
-		Clique no botão Run e selecione a configuração do servidor que você acabou de criar. Verifique se o projeto está sendo executado corretamente acessando o endereço http://localhost:8080 no navegador.
+1. **Baixar o Projeto:**
+   - Clone o repositório do GitHub e extraia os arquivos em uma pasta local:
+     ```sh
+     git clone https://github.com/R0mi1y/KidPlus.git
+     ```
 
-	Passo 5: Executar script SQL
-		
-		Execute o script SQL fornecido em seu SGBD MySQL para completar a instalação do projeto.
+2. **Abrir o Projeto no IntelliJ:**
+   - Inicie o IntelliJ IDEA.
+   - Vá para **File > Open** e selecione a pasta do projeto.
 
-		CREATE DATABASE IF NOT EXISTS creche;
+3. **Configurar o Tomcat no IntelliJ:**
+   - Acesse o menu **Run** e selecione **Edit Configurations**.
+   - Clique no botão **+** e selecione **Tomcat Server > Local**.
+   - Dê um nome para a configuração do servidor e especifique o caminho do Tomcat instalado.
+   - Clique em **Apply** e depois em **OK** para salvar as configurações.
 
-		Entre na classe DAO que está em demo\src\main\java\kidPlus\model\DAO.java e troque as variáveis user e password para sua senha e usuário do mysql;
+4. **Executar o Projeto:**
+   - Clique no botão **Run** e selecione a configuração do Tomcat que você criou.
+   - Acesse a aplicação no navegador em [http://localhost:8080](http://localhost:8080).
 
-VÍDEO DE APRESENTAÇÃO:
-	https://youtu.be/Sw7QfOd6fos
+5. **Configurar o Banco de Dados:**
+   - Execute o script SQL fornecido em seu SGBD MySQL para criar o banco de dados `creche`:
+     ```sql
+     CREATE DATABASE IF NOT EXISTS creche;
+     ```
+   - Na classe DAO localizada em `demo/src/main/java/kidPlus/model/DAO.java`, substitua as variáveis `user` e `password` pelas suas credenciais do MySQL.
 
-GITHUB COMPARTILHADO:
-	https://github.com/R0mi1y/KidPlus
+### Vídeo de Apresentação
 
+Confira o vídeo de apresentação do projeto aqui: [YouTube](https://youtu.be/Sw7QfOd6fos)
 
-Senha e usuário padrão: admin
+### Repositório do GitHub
+
+O código-fonte está disponível no GitHub: [KidPlus](https://github.com/R0mi1y/KidPlus)
+
+### Credenciais Padrão
+
+- **Usuário:** admin
+- **Senha:** admin
